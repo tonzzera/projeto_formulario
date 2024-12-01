@@ -61,13 +61,13 @@ select {
 }
 
 input{
-    &[disabled]{
+    &[disabled] {
         background-color: var(--surface-disabled);
         border: 1px solid var(--stroke-default);
         color: var(--text-primary);
     }
 
-    &:invalid{
+    & :invalid{
         border: 0.125rem solid var(--semantic-error);
 
     }
@@ -80,7 +80,7 @@ input{
 
     }
 
-    &[required] + .error{
+    & [required] + .error{
         display: flex;
         align-items: center;
         gap: .25rem;
@@ -90,7 +90,7 @@ input{
 
     }
 
-    &:not(:focus):valid + .error{
+    & :not(:focus):valid + .error{
         display: none;
 
     }
